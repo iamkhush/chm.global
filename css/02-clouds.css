@@ -1,0 +1,47 @@
+.cloud
+{
+    position: absolute;
+    z-index: 2;
+    width: auto;
+    height: auto;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+
+.cloud > img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-transform-origin: 50% -100%;
+}
+
+
+@-webkit-keyframes fade
+{
+    0%   { opacity: 0; }
+    15%   { opacity: .8; }
+    95%  { opacity: .8; }
+    100% { opacity: 0; }
+}
+
+
+@-webkit-keyframes drop
+{
+    0%   { -webkit-transform: translate(0px, 1400px); }
+    100% { -webkit-transform: translate(650px, -300px); }
+}
+
+@-webkit-keyframes clockwiseSpin
+{
+    0%   { -webkit-transform: rotate(-5deg); }
+    100% { -webkit-transform: rotate(5deg); }
+}
+@-webkit-keyframes counterclockwiseSpinAndFlip
+{
+    0%   { -webkit-transform: scale(-1, 1) rotate(5deg); }
+    100% { -webkit-transform: scale(-1, 1) rotate(-5deg); }
+}
